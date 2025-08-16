@@ -3,7 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Vasco Oliveira - Network & Security Engineer with experience in system administration, Active Directory, and telecommunications integration." />
+    <meta name="keywords" content="Network Security, System Administration, Active Directory, Infrastructure, DevOps, Cybersecurity, Portugal" />
+    <meta name="author" content="Vasco Oliveira" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vascoliveira.github.io/" />
+    <meta property="og:title" content="Vasco Oliveira - Network & Security Engineer" />
+    <meta property="og:description" content="Computer Engineer with experience in network security, system administration, and user access management. Specializing in Active Directory, infrastructure automation, and telecommunications integration." />
+    <meta property="og:image" content="https://vascoliveira.github.io/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://vascoliveira.github.io/" />
+    <meta property="twitter:title" content="Vasco Oliveira - Network & Security Engineer" />
+    <meta property="twitter:description" content="Computer Engineer with experience in network security, system administration, and user access management." />
+    <meta property="twitter:image" content="https://vascoliveira.github.io/og-image.png" />
+    
     <title>Vasco Oliveira - Network & Security Engineer</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
@@ -474,18 +493,81 @@
         background: var(--border-color);
       }
 
+      /* Mobile Navigation */
+      .mobile-nav-toggle {
+        display: none;
+        background: var(--bg-tertiary);
+        border: 1px solid var(--border-color);
+        color: var(--text-primary);
+        padding: 8px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-size: 0.9rem;
+      }
+
+      .mobile-nav-toggle:hover {
+        background: var(--accent-orange);
+        color: white;
+      }
+
+      .mobile-nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--bg-secondary);
+        z-index: 1001;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        animation: fadeIn 0.3s ease;
+      }
+
+      .mobile-nav.active {
+        display: flex;
+      }
+
+      .mobile-nav a {
+        color: var(--text-primary);
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 500;
+        transition: color 0.2s ease;
+      }
+
+      .mobile-nav a:hover {
+        color: var(--accent-orange);
+      }
+
+      .mobile-nav-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        color: var(--text-primary);
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 4px;
+        transition: background 0.2s ease;
+      }
+
+      .mobile-nav-close:hover {
+        background: var(--bg-tertiary);
+      }
+
       /* Responsive */
       @media (max-width: 768px) {
         .nav-links {
-          gap: 16px;
-        }
-
-        .nav-links a {
           display: none;
         }
 
-        .nav-links a:first-child,
-        .theme-toggle {
+        .mobile-nav-toggle {
           display: block;
         }
 
@@ -538,12 +620,33 @@
           <a href="#education">Education</a>
           <a href="#publications">Publications</a>
           <a href="#languages">Languages</a>
+          <a href="#contact">Contact</a>
           <button class="theme-toggle" onclick="toggleTheme()">
             <i class="fas fa-moon"></i>
           </button>
         </div>
+        <div class="mobile-nav-toggle" onclick="toggleMobileNav()">
+          <i class="fas fa-bars"></i>
+        </div>
       </div>
     </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav" id="mobileNav">
+      <button class="mobile-nav-close" onclick="toggleMobileNav()">
+        <i class="fas fa-times"></i>
+      </button>
+      <a href="#experience" onclick="toggleMobileNav()">Experience</a>
+      <a href="#skills" onclick="toggleMobileNav()">Skills</a>
+      <a href="#projects" onclick="toggleMobileNav()">Projects</a>
+      <a href="#education" onclick="toggleMobileNav()">Education</a>
+      <a href="#publications" onclick="toggleMobileNav()">Publications</a>
+      <a href="#languages" onclick="toggleMobileNav()">Languages</a>
+      <a href="#contact" onclick="toggleMobileNav()">Contact</a>
+      <button class="theme-toggle" onclick="toggleTheme(); toggleMobileNav();" style="background: var(--bg-tertiary); border: 1px solid var(--border-color); color: var(--text-primary); padding: 12px 24px; border-radius: 8px; font-size: 1rem;">
+        <i class="fas fa-moon"></i> Toggle Theme
+      </button>
+    </div>
 
     <div class="container">
       <!-- Hero Section -->
@@ -705,6 +808,11 @@
               FreeIPA integration for user authentication, streamlining network
               access controls across the organization.
             </div>
+            <div class="project-links" style="margin-top: 16px; display: flex; gap: 12px;">
+              <a href="https://github.com/vascoliveira2511" target="_blank" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
           </div>
 
           <div class="project-card">
@@ -721,6 +829,11 @@
               using Ansible/AWX, implementing infrastructure as code practices
               for consistent server deployments.
             </div>
+            <div class="project-links" style="margin-top: 16px; display: flex; gap: 12px;">
+              <a href="https://github.com/vascoliveira2511" target="_blank" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
           </div>
 
           <div class="project-card">
@@ -734,6 +847,11 @@
               Designed network architecture for ABC Unified Communications
               integration with Microsoft Teams, configuring SIP protocols and
               Session Border Controllers.
+            </div>
+            <div class="project-links" style="margin-top: 16px; display: flex; gap: 12px;">
+              <a href="https://github.com/vascoliveira2511" target="_blank" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">
+                <i class="fab fa-github"></i> View Code
+              </a>
             </div>
           </div>
         </div>
@@ -880,7 +998,120 @@
           </div>
         </div>
       </div>
+
+      <!-- Contact Section -->
+      <div class="section fade-in" id="contact">
+        <h2>Get In Touch</h2>
+        <p class="section-subtitle">Let's discuss opportunities and collaborations</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 48px; align-items: start;">
+          <div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 24px; color: var(--text-primary);">Contact Information</h3>
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>vasco-mota-oliveira@outlook.pt</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+351 916991640</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Guimarães, Portugal</span>
+              </div>
+              <a href="https://linkedin.com/in/vascoliveira2511" class="contact-item" target="_blank">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn Profile</span>
+              </a>
+              <a href="https://github.com/vascoliveira2511" class="contact-item" target="_blank">
+                <i class="fab fa-github"></i>
+                <span>GitHub Profile</span>
+              </a>
+            </div>
+          </div>
+          
+          <div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 24px; color: var(--text-primary);">Send a Message</h3>
+            <form class="contact-form" onsubmit="handleContactForm(event)">
+              <div style="margin-bottom: 20px;">
+                <label for="name" style="display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 500;">Name *</label>
+                <input type="text" id="name" name="name" required style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 6px; background: var(--bg-secondary); color: var(--text-primary); font-size: 0.95rem;">
+              </div>
+              <div style="margin-bottom: 20px;">
+                <label for="email" style="display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 500;">Email *</label>
+                <input type="email" id="email" name="email" required style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 6px; background: var(--bg-secondary); color: var(--text-primary); font-size: 0.95rem;">
+              </div>
+              <div style="margin-bottom: 20px;">
+                <label for="subject" style="display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 500;">Subject *</label>
+                <input type="text" id="subject" name="subject" required style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 6px; background: var(--bg-secondary); color: var(--text-primary); font-size: 0.95rem;">
+              </div>
+              <div style="margin-bottom: 24px;">
+                <label for="message" style="display: block; margin-bottom: 8px; color: var(--text-secondary); font-weight: 500;">Message *</label>
+                <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 6px; background: var(--bg-secondary); color: var(--text-primary); font-size: 0.95rem; resize: vertical; min-height: 120px;"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- Footer -->
+    <footer style="background: var(--bg-secondary); border-top: 1px solid var(--border-color); padding: 48px 0 24px;">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 32px; margin-bottom: 32px;">
+          <div>
+            <h3 style="color: var(--text-primary); margin-bottom: 16px; font-size: 1.2rem;">Vasco Oliveira</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 16px; line-height: 1.6;">Network & Security Engineer specializing in system administration, infrastructure automation, and telecommunications integration.</p>
+            <div style="display: flex; gap: 12px;">
+              <a href="https://linkedin.com/in/vascoliveira2511" target="_blank" style="color: var(--text-secondary); font-size: 1.2rem; transition: color 0.2s ease;">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/vascoliveira2511" target="_blank" style="color: var(--text-secondary); font-size: 1.2rem; transition: color 0.2s ease;">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="mailto:vasco-mota-oliveira@outlook.pt" style="color: var(--text-secondary); font-size: 1.2rem; transition: color 0.2s ease;">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div>
+            <h4 style="color: var(--text-primary); margin-bottom: 16px; font-size: 1.1rem;">Quick Links</h4>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <a href="#experience" style="color: var(--text-secondary); text-decoration: none; transition: color 0.2s ease;">Experience</a>
+              <a href="#skills" style="color: var(--text-secondary); text-decoration: none; transition: color 0.2s ease;">Skills</a>
+              <a href="#projects" style="color: var(--text-secondary); text-decoration: none; transition: color 0.2s ease;">Projects</a>
+              <a href="#education" style="color: var(--text-secondary); text-decoration: none; transition: color 0.2s ease;">Education</a>
+            </div>
+          </div>
+          
+          <div>
+            <h4 style="color: var(--text-primary); margin-bottom: 16px; font-size: 1.1rem;">Contact Info</h4>
+            <div style="display: flex; flex-direction: column; gap: 8px; color: var(--text-secondary);">
+              <div>📍 Guimarães, Portugal</div>
+              <div>📧 vasco-mota-oliveira@outlook.pt</div>
+              <div>📱 +351 916991640</div>
+              <div>🆔 ORCID: 0009-0007-2534-5653</div>
+            </div>
+          </div>
+        </div>
+        
+        <div style="border-top: 1px solid var(--border-color); padding-top: 24px; text-align: center; color: var(--text-muted); font-size: 0.9rem;">
+          <p>&copy; 2024 Vasco Oliveira. All rights reserved.</p>
+          <p style="margin-top: 8px;">Built with passion for cybersecurity and infrastructure excellence.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" onclick="scrollToTop()" style="position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; background: var(--accent-orange); color: white; border: none; cursor: pointer; box-shadow: var(--shadow); display: none; align-items: center; justify-content: center; font-size: 1.2rem; transition: all 0.3s ease; z-index: 1000;">
+      <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script>
       // Theme toggle
@@ -933,11 +1164,14 @@
         });
       }
 
-      // Download resume (placeholder)
+      // Download resume
       function downloadResume() {
-        alert(
-          "Resume download would be implemented here. You could generate a PDF version of your resume or link to a hosted PDF file."
-        );
+        const link = document.createElement('a');
+        link.href = 'resume.pdf';
+        link.download = 'Vasco_Oliveira_Resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
       }
 
       // Smooth scrolling
@@ -994,6 +1228,96 @@
           if (link.getAttribute("href") === `#${current}`) {
             link.classList.add("active");
           }
+        });
+      });
+
+      // Mobile navigation toggle
+      function toggleMobileNav() {
+        const mobileNav = document.getElementById('mobileNav');
+        mobileNav.classList.toggle('active');
+        
+        // Prevent body scroll when mobile nav is open
+        if (mobileNav.classList.contains('active')) {
+          document.body.style.overflow = 'hidden';
+        } else {
+          document.body.style.overflow = '';
+        }
+      }
+
+      // Close mobile nav when clicking outside
+      document.addEventListener('click', function(event) {
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileToggle = document.querySelector('.mobile-nav-toggle');
+        
+        if (mobileNav.classList.contains('active') && 
+            !mobileNav.contains(event.target) && 
+            !mobileToggle.contains(event.target)) {
+          toggleMobileNav();
+        }
+      });
+
+      // Contact form handler
+      function handleContactForm(event) {
+        event.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        
+        // Create mailto link
+        const mailtoLink = `mailto:vasco-mota-oliveira@outlook.pt?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\nMessage:\n${message}`)}`;
+        
+        // Open email client
+        window.location.href = mailtoLink;
+        
+        // Show success message
+        alert('Opening your email client... Please send the message from there.');
+        
+        // Reset form
+        event.target.reset();
+      }
+
+      // Back to top functionality
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+
+      // Show/hide back to top button
+      window.addEventListener('scroll', function() {
+        const backToTopButton = document.getElementById('backToTop');
+        if (window.pageYOffset > 300) {
+          backToTopButton.style.display = 'flex';
+        } else {
+          backToTopButton.style.display = 'none';
+        }
+      });
+
+      // Add hover effects to footer links and social icons
+      document.addEventListener('DOMContentLoaded', function() {
+        // Footer link hover effects
+        const footerLinks = document.querySelectorAll('footer a');
+        footerLinks.forEach(link => {
+          link.addEventListener('mouseenter', function() {
+            this.style.color = 'var(--accent-orange)';
+          });
+          link.addEventListener('mouseleave', function() {
+            this.style.color = 'var(--text-secondary)';
+          });
+        });
+
+        // Back to top button hover effect
+        const backToTopButton = document.getElementById('backToTop');
+        backToTopButton.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-2px)';
+          this.style.boxShadow = '0 8px 24px rgba(255, 107, 53, 0.3)';
+        });
+        backToTopButton.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0)';
+          this.style.boxShadow = 'var(--shadow)';
         });
       });
     </script>

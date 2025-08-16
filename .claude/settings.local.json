@@ -1,8 +1,10 @@
 {
   "permissions": {
-    "defaultMode": "acceptEdits",
     "allow": [
-      "Bash(start index.html)"
-    ]
+      "Bash(start index.html)",
+      "Bash(copy:*)",
+      "Bash(cp:*)"
+    ],
+    "defaultMode": "acceptEdits"
   }
 }
