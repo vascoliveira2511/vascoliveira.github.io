@@ -536,6 +536,8 @@
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#education">Education</a>
+          <a href="#publications">Publications</a>
+          <a href="#languages">Languages</a>
           <button class="theme-toggle" onclick="toggleTheme()">
             <i class="fas fa-moon"></i>
           </button>
@@ -552,9 +554,7 @@
         <h1>Vasco Oliveira</h1>
         <p class="subtitle">Network & Security Engineer</p>
         <p class="description">
-          Computer Engineer specializing in Linux system administration, network
-          security, and infrastructure automation. Experience with container
-          orchestration, monitoring systems, and network access controls.
+          Computer Engineer with experience in network security, system administration, and user access management. Handle IT tickets, Active Directory administration, and infrastructure changes with expertise in telecommunications integration.
         </p>
 
         <div class="contact-grid">
@@ -623,8 +623,8 @@
           <button class="filter-btn active" onclick="filterSkills('all')">
             All
           </button>
-          <button class="filter-btn" onclick="filterSkills('linux')">
-            Linux
+          <button class="filter-btn" onclick="filterSkills('identity')">
+            Identity
           </button>
           <button class="filter-btn" onclick="filterSkills('network')">
             Network
@@ -638,51 +638,48 @@
         </div>
 
         <div class="skills-grid">
-          <div class="skill-category" data-category="linux">
-            <h3><i class="fab fa-linux"></i> Linux & System Administration</h3>
+          <div class="skill-category" data-category="identity">
+            <h3><i class="fas fa-shield-alt"></i> Identity & Access Management</h3>
             <ul>
-              <li>Linux Server Administration</li>
-              <li>System Monitoring (Zabbix)</li>
+              <li>Active Directory Administration</li>
               <li>User Account Management</li>
-              <li>FreeIPA Authentication</li>
+              <li>Access Rights Configuration</li>
+              <li>Group Policy Management</li>
+              <li>FreeIPA</li>
               <li>Network Access Controls</li>
-              <li>Backup Solutions</li>
             </ul>
           </div>
 
           <div class="skill-category" data-category="network">
-            <h3><i class="fas fa-network-wired"></i> Network & Security</h3>
+            <h3><i class="fas fa-tools"></i> IT Support & Security</h3>
             <ul>
-              <li>Firewall Management</li>
-              <li>VPN & IPsec Configuration</li>
-              <li>Network Segmentation</li>
-              <li>Load Balancing (HAProxy)</li>
               <li>IT Ticket Management (GLPI)</li>
               <li>Incident Resolution</li>
+              <li>System Monitoring (Zabbix)</li>
+              <li>Network Security</li>
+              <li>Firewall Management</li>
+              <li>VPN & IPsec</li>
             </ul>
           </div>
 
           <div class="skill-category" data-category="cloud">
-            <h3><i class="fas fa-cloud"></i> Infrastructure & DevOps</h3>
+            <h3><i class="fas fa-cloud"></i> Cloud & Infrastructure</h3>
             <ul>
               <li>Infrastructure as Code (Ansible/AWX)</li>
               <li>Virtualization (oVirt)</li>
               <li>Container Orchestration</li>
-              <li>Database Administration (MySQL/PostgreSQL)</li>
-              <li>Multi-site Infrastructure</li>
-              <li>Server Deployment</li>
+              <li>Database Administration</li>
+              <li>Backup Solutions</li>
             </ul>
           </div>
 
           <div class="skill-category" data-category="dev">
-            <h3><i class="fas fa-code"></i> Programming & Development</h3>
+            <h3><i class="fas fa-code"></i> Programming & Automation</h3>
             <ul>
               <li>Python</li>
               <li>Java</li>
               <li>SQL</li>
               <li>HTML/CSS/Javascript</li>
-              <li>Mobile App Development</li>
-              <li>API Integration</li>
             </ul>
           </div>
         </div>
@@ -742,8 +739,147 @@
         </div>
       </div>
 
-      <!-- Experience, Education, etc. sections remain the same but with updated styling -->
-      <!-- I'll keep the existing content structure but apply the new color scheme -->
+      <!-- Experience Section -->
+      <div class="section fade-in" id="experience">
+        <h2>Experience</h2>
+        <p class="section-subtitle">Professional journey in network security and infrastructure</p>
+        
+        <div class="experience-item">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
+            <div>
+              <h3 class="job-title" style="font-size: 1.3rem; font-weight: 600; margin-bottom: 8px;">Network and Computer Systems Technician</h3>
+              <div class="company" style="font-size: 1.1rem; font-weight: 500; margin-bottom: 4px;">DigitalSign</div>
+              <div class="location" style="font-size: 0.9rem;">Guimarães, Portugal</div>
+            </div>
+            <div class="duration">2024/09 - Present</div>
+          </div>
+          <ul style="list-style: none; padding-left: 0;">
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Handle IT tickets using GLPI for incident management and user support requests across the organization.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Manage Active Directory domains, user accounts, and Group Policies. Create and modify user permissions and group memberships.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Plan and execute infrastructure changes including server deployments, network modifications, and system updates.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Configure firewall policies, IPsec VPN connections, and network segmentation. Manage load balancing with HAProxy.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Built mobile app for network access management with FreeIPA integration for user authentication.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Deploy infrastructure using Ansible/AWX. Monitor systems with Zabbix. Manage MySQL and PostgreSQL clusters.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Document network configurations and create technical procedures for multi-site infrastructure.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Administer Windows and Linux servers across multiple datacenters with virtualized environments.</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
+            <div>
+              <h3 class="job-title" style="font-size: 1.3rem; font-weight: 600; margin-bottom: 8px;">Curricular Internship - Telecommunications Integration</h3>
+              <div class="company" style="font-size: 1.1rem; font-weight: 500; margin-bottom: 4px;">Altice Labs</div>
+              <div class="location" style="font-size: 0.9rem;">Porto, Portugal</div>
+            </div>
+            <div class="duration">2023/08 - 2024/07</div>
+          </div>
+          <ul style="list-style: none; padding-left: 0;">
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Designed network architecture for ABC Unified Communications integration with Microsoft Teams.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Configured SIP protocols and Session Border Controllers for VoIP communications.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Worked on telecommunications infrastructure and cloud integration projects.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Education Section -->
+      <div class="section fade-in" id="education">
+        <h2>Education</h2>
+        <p class="section-subtitle">Academic background in computer engineering and cybersecurity</p>
+        
+        <div class="education-item">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
+            <div>
+              <h3 class="degree" style="font-size: 1.3rem; font-weight: 600; margin-bottom: 8px;">Master's in Computer Engineering</h3>
+              <div class="university" style="font-size: 1.1rem; font-weight: 500; margin-bottom: 4px;">University of Minho</div>
+              <div class="location" style="font-size: 0.9rem;">Braga, Portugal</div>
+            </div>
+            <div class="duration">09/2022 - 09/2024</div>
+          </div>
+          <ul style="list-style: none; padding-left: 0;">
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Specialized in Network Cybersecurity with focus on information security, access control systems, and identity management.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Coursework included Information Security, Network Infrastructure Design, Systems Administration, and secure software development practices.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Completed full-stack development project with Accenture, gaining experience in enterprise application security and user management.</li>
+          </ul>
+        </div>
+
+        <div class="education-item">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
+            <div>
+              <h3 class="degree" style="font-size: 1.3rem; font-weight: 600; margin-bottom: 8px;">Bachelor's in Computer Engineering</h3>
+              <div class="university" style="font-size: 1.1rem; font-weight: 500; margin-bottom: 4px;">University of Minho</div>
+              <div class="location" style="font-size: 0.9rem;">Braga, Portugal</div>
+            </div>
+            <div class="duration">09/2019 - 07/2022</div>
+          </div>
+          <ul style="list-style: none; padding-left: 0;">
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Foundation in computer systems, network protocols, and cybersecurity fundamentals.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Coursework in database systems, software engineering, and computer networks.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Publications Section -->
+      <div class="section fade-in" id="publications">
+        <h2>Publications</h2>
+        <p class="section-subtitle">Research contributions in unified communications and telecommunications</p>
+        
+        <div class="publication-item">
+          <h3 class="publication-title" style="font-size: 1.3rem; font-weight: 600; margin-bottom: 8px; color: var(--text-primary);">Seamless Integration of ABC Unified Communications with Microsoft Teams</h3>
+          <div style="color: var(--text-secondary); margin-bottom: 8px;">V. M. De Oliveira, S. R. Lima, J. M. Ribeiro and L. Franzões</div>
+          <div class="publication-year" style="font-size: 0.9rem;">2025</div>
+        </div>
+
+        <div class="publication-item">
+          <h3 class="publication-title" style="font-size: 1.3rem; font-weight: 600; margin-bottom: 8px; color: var(--text-primary);">Embracing Unified Communication and Collaboration: Business and Technological Trends</h3>
+          <div style="color: var(--text-secondary); margin-bottom: 8px;">V. M. De Oliveira, S. R. Lima and J. M. Ribeiro</div>
+          <div class="publication-year" style="font-size: 0.9rem;">2024 | doi: 10.23919/SpliTech61897.2024.10612601</div>
+        </div>
+      </div>
+
+      <!-- Languages Section -->
+      <div class="section fade-in" id="languages">
+        <h2>Languages</h2>
+        <p class="section-subtitle">Multilingual capabilities for international collaboration</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 32px;">
+          <div class="language-item">
+            <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">Portuguese</h3>
+            <div style="display: flex; gap: 4px;">
+              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
+              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
+              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
+              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
+              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
+            </div>
+            <div style="margin-top: 8px; color: var(--text-secondary); font-size: 0.9rem;">Native</div>
+          </div>
+
+          <div class="language-item">
+            <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">English</h3>
+            <div style="display: flex; gap: 4px;">
+              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
+              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
+              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
+              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
+              <div class="dot empty" style="width: 12px; height: 12px; border-radius: 50%; background: var(--border-color);"></div>
+            </div>
+            <div style="margin-top: 8px; color: var(--text-secondary); font-size: 0.9rem;">Advanced</div>
+          </div>
+
+          <div class="language-item">
+            <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">French</h3>
+            <div style="display: flex; gap: 4px;">
+              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
+              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
+              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
+              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
+              <div class="dot empty" style="width: 12px; height: 12px; border-radius: 50%; background: var(--border-color);"></div>
+            </div>
+            <div style="margin-top: 8px; color: var(--text-secondary); font-size: 0.9rem;">Advanced</div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
