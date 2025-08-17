@@ -9,7 +9,11 @@
       "Bash(start http://localhost:8000)",
       "WebSearch",
       "WebFetch(domain:github.com)",
-      "WebFetch(domain:game-hub-kappa-eight-30.vercel.app)"
+      "WebFetch(domain:game-hub-kappa-eight-30.vercel.app)",
+      "Bash(start http://localhost:8001)",
+      "Bash(pip install:*)",
+      "Bash(del create_og_image.py)",
+      "Bash(rm:*)"
     ],
     "defaultMode": "acceptEdits"
   }
