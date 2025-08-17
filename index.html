@@ -564,40 +564,45 @@
       /* Responsive */
       @media (max-width: 768px) {
         .container {
-          padding: 0 16px;
+          padding: 0 20px;
         }
 
         /* Experience section mobile improvements */
         .experience-item > div[style*="display: grid"] {
-          gap: 12px !important;
+          gap: 20px !important;
+          grid-template-columns: 1fr !important;
         }
         
         .experience-item > div[style*="display: grid"] > div {
-          padding: 16px !important;
+          padding: 24px !important;
           margin-bottom: 0 !important;
+          min-height: 200px !important;
+          display: flex !important;
+          flex-direction: column !important;
         }
         
         .experience-item > div[style*="display: grid"] h4 {
-          font-size: 0.9rem !important;
-          margin-bottom: 8px !important;
+          font-size: 1rem !important;
+          margin-bottom: 12px !important;
         }
         
         .experience-item > div[style*="display: grid"] li {
-          font-size: 0.85rem !important;
-          padding: 2px 0 !important;
-          padding-left: 12px !important;
+          font-size: 0.9rem !important;
+          padding: 4px 0 !important;
+          padding-left: 16px !important;
         }
 
         /* Education section mobile improvements */
         .education-item,
         .publication-item {
-          padding: 20px 16px !important;
-          margin-bottom: 16px !important;
+          padding: 28px 24px !important;
+          margin-bottom: 24px !important;
+          text-align: center !important;
         }
         
         .education-item > div[style*="background: var(--bg-tertiary)"] {
-          padding: 12px !important;
-          margin-bottom: 12px !important;
+          padding: 20px !important;
+          margin-bottom: 16px !important;
         }
         
         .education-item ul {
@@ -605,23 +610,24 @@
         }
         
         .education-item li {
-          font-size: 0.85rem !important;
+          font-size: 0.9rem !important;
+          padding: 4px 0 !important;
         }
 
         /* Language section mobile improvements */
         .language-item {
-          padding: 20px 16px !important;
+          padding: 28px 24px !important;
           text-align: center;
         }
         
         .language-item h3 {
-          font-size: 1.1rem !important;
-          margin-bottom: 12px !important;
+          font-size: 1.2rem !important;
+          margin-bottom: 16px !important;
         }
         
         .language-item > div[style*="background: var(--bg-tertiary)"] {
-          padding: 10px !important;
-          margin-bottom: 12px !important;
+          padding: 20px !important;
+          margin-bottom: 16px !important;
         }
 
         .nav-links {
@@ -633,76 +639,86 @@
         }
 
         .hero {
-          padding: 80px 0 40px;
+          padding: 100px 0 50px;
           text-align: center;
         }
 
         .hero h1 {
-          font-size: 2.2rem;
-          margin-bottom: 12px;
-        }
-
-        .hero .subtitle {
-          font-size: 1.2rem;
+          font-size: 2.4rem;
           margin-bottom: 16px;
         }
 
+        .hero .subtitle {
+          font-size: 1.3rem;
+          margin-bottom: 20px;
+        }
+
         .hero .description {
-          font-size: 0.95rem;
-          padding: 0 15px;
-          margin-bottom: 32px;
-          line-height: 1.5;
+          font-size: 1rem;
+          padding: 0 20px;
+          margin-bottom: 40px;
+          line-height: 1.6;
         }
 
         .contact-grid {
           grid-template-columns: 1fr;
-          gap: 8px;
-          margin-bottom: 32px;
+          gap: 16px;
+          margin-bottom: 40px;
+          max-width: 100%;
         }
 
         .contact-item {
-          padding: 12px 16px;
-          font-size: 0.9rem;
+          padding: 16px 20px;
+          font-size: 0.95rem;
+          margin: 0 auto;
+          text-align: left;
+          justify-content: flex-start;
+          max-width: 400px;
+          width: 100%;
         }
 
         .section {
-          padding: 40px 0;
+          padding: 50px 0;
           text-align: center;
         }
 
         .section h2 {
-          font-size: 1.8rem;
-          margin-bottom: 12px;
+          font-size: 2rem;
+          margin-bottom: 24px;
         }
 
         .section-subtitle {
-          padding: 0 15px;
-          margin-bottom: 32px;
-          font-size: 1rem;
+          padding: 0 20px;
+          margin-bottom: 40px;
+          font-size: 1.1rem;
         }
 
         .skills-grid,
         .projects-grid {
           grid-template-columns: 1fr;
-          gap: 16px;
+          gap: 24px;
+          max-width: 100%;
         }
 
         .skill-category,
         .project-card {
           margin: 0 auto;
           max-width: 100%;
-          padding: 20px 16px;
+          padding: 28px 24px;
+          text-align: left;
         }
 
         .skill-category h3,
         .project-title {
-          font-size: 1.1rem;
-          margin-bottom: 12px;
+          font-size: 1.2rem;
+          margin-bottom: 16px;
+          text-align: center;
         }
 
         .skill-category li {
-          padding: 4px 0;
-          font-size: 0.9rem;
+          padding: 6px 0;
+          font-size: 0.95rem;
+          text-align: left;
         }
 
         .project-description {
@@ -726,43 +742,49 @@
         }
 
         /* Experience items mobile - simplified */
-        .experience-item,
-        .education-item,
-        .publication-item {
-          padding: 20px 16px;
-          margin-bottom: 16px;
+        .experience-item {
+          padding: 28px 24px;
+          margin-bottom: 24px;
+          text-align: left;
+        }
+
+        .experience-item h3,
+        .education-item h3 {
+          text-align: center;
         }
 
         .experience-item > div:first-child,
         .education-item > div:first-child {
-          flex-direction: column;
-          text-align: center;
-          gap: 8px;
+          flex-direction: column !important;
+          text-align: center !important;
+          gap: 12px !important;
+          align-items: center !important;
+          justify-content: center !important;
         }
 
         .job-title,
         .degree,
         .publication-title {
-          font-size: 1.1rem;
-          margin-bottom: 6px;
+          font-size: 1.2rem;
+          margin-bottom: 8px;
         }
 
         .company,
         .university {
-          font-size: 1rem;
+          font-size: 1.05rem;
         }
 
         .duration {
           align-self: center;
-          margin-top: 8px;
-          padding: 6px 12px;
-          font-size: 0.85rem;
+          margin-top: 12px;
+          padding: 8px 16px;
+          font-size: 0.9rem;
         }
 
         .experience-item ul li,
         .education-item ul li {
-          font-size: 0.9rem;
-          padding: 3px 0;
+          font-size: 0.95rem;
+          padding: 4px 0;
           line-height: 1.4;
         }
 
@@ -806,19 +828,59 @@
           line-height: 1.3;
         }
 
+        /* Fix publications layout overflow on tablet */
+        #publications > div[style*="display: grid"] > div {
+          margin: 0 auto !important;
+          max-width: 100% !important;
+          overflow: hidden !important;
+        }
+
+        #publications > div[style*="display: grid"] > div > div[style*="display: flex"] {
+          flex-direction: column !important;
+          align-items: center !important;
+          text-align: center !important;
+          gap: 16px !important;
+        }
+
+        #publications > div[style*="display: grid"] > div > div[style*="display: flex"] > div[style*="flex: 1"] {
+          flex: none !important;
+          width: 100% !important;
+          text-align: center !important;
+        }
+
+        /* Fix education cards title/date layout */
+        #education > div[style*="display: grid"] > div > div[style*="display: flex"][style*="justify-content: space-between"] {
+          flex-direction: column !important;
+          align-items: center !important;
+          text-align: center !important;
+          gap: 12px !important;
+          justify-content: center !important;
+        }
+
+        #education > div[style*="display: grid"] > div > div[style*="display: flex"][style*="justify-content: space-between"] > div {
+          text-align: center !important;
+        }
+
+        /* Fix location text centering */
+        #education div[style*="display: flex"][style*="align-items: center"][style*="gap: 6px"] {
+          justify-content: center !important;
+        }
+
         /* Footer mobile - simplified */
         footer {
           padding: 32px 0 16px !important;
         }
 
         footer .container > div {
-          text-align: center;
+          text-align: center !important;
           gap: 20px !important;
+          grid-template-columns: 1fr !important;
         }
 
         footer .container > div > div {
           justify-content: center !important;
-          align-items: center;
+          align-items: center !important;
+          text-align: center !important;
         }
 
         footer h3,
@@ -853,58 +915,58 @@
 
       @media (max-width: 480px) {
         .container {
-          padding: 0 12px;
+          padding: 0 16px;
         }
 
         .hero {
-          padding: 60px 0 32px;
+          padding: 80px 0 40px;
         }
 
         .hero h1 {
-          font-size: 1.8rem;
-          margin-bottom: 8px;
-        }
-
-        .hero .subtitle {
-          font-size: 1rem;
+          font-size: 2rem;
           margin-bottom: 12px;
         }
 
+        .hero .subtitle {
+          font-size: 1.1rem;
+          margin-bottom: 16px;
+        }
+
         .hero .description {
-          font-size: 0.85rem;
-          padding: 0 8px;
-          margin-bottom: 24px;
+          font-size: 0.9rem;
+          padding: 0 12px;
+          margin-bottom: 32px;
         }
 
         .section {
-          padding: 32px 0;
+          padding: 40px 0;
         }
 
         .section h2 {
-          font-size: 1.5rem;
-          margin-bottom: 8px;
+          font-size: 1.7rem;
+          margin-bottom: 20px;
         }
 
         /* Compact experience cards */
         .experience-item > div[style*="display: grid"] {
-          gap: 8px !important;
+          gap: 16px !important;
         }
         
         .experience-item > div[style*="display: grid"] > div {
-          padding: 12px !important;
-          border-radius: 6px !important;
+          padding: 16px !important;
+          border-radius: 8px !important;
         }
         
         .experience-item > div[style*="display: grid"] h4 {
-          font-size: 0.85rem !important;
-          margin-bottom: 6px !important;
+          font-size: 0.9rem !important;
+          margin-bottom: 8px !important;
         }
         
         .experience-item > div[style*="display: grid"] li {
           font-size: 0.8rem !important;
-          padding: 1px 0 !important;
-          padding-left: 10px !important;
-          line-height: 1.3 !important;
+          padding: 3px 0 !important;
+          padding-left: 12px !important;
+          line-height: 1.4 !important;
         }
 
         /* Compact education and other sections */
@@ -914,49 +976,66 @@
         .education-item,
         .publication-item,
         .language-item {
-          padding: 14px 10px !important;
-          margin-bottom: 10px !important;
+          padding: 20px 16px !important;
+          margin-bottom: 20px !important;
+          text-align: center !important;
         }
 
         .skill-category h3,
         .project-title {
-          font-size: 1rem;
+          font-size: 1.1rem;
+          margin-bottom: 12px;
+          text-align: center;
         }
 
         .skill-category li {
-          font-size: 0.8rem;
-          padding: 1px 0;
+          font-size: 0.85rem;
+          padding: 4px 0;
+          text-align: left;
+        }
+
+        .skill-category,
+        .project-card {
+          text-align: left;
+          margin: 0 auto;
+          max-width: 100%;
         }
 
         /* Education specific mobile fixes */
         .education-item > div[style*="background: var(--bg-tertiary)"] {
-          padding: 8px !important;
-          margin-bottom: 8px !important;
+          padding: 16px !important;
+          margin-bottom: 12px !important;
         }
         
         .education-item h4 {
-          font-size: 0.85rem !important;
+          font-size: 0.9rem !important;
         }
         
         .education-item ul li {
           font-size: 0.8rem !important;
-          padding: 1px 0 !important;
+          padding: 3px 0 !important;
         }
 
         /* Languages mobile fixes */
         .language-item > div[style*="background: var(--bg-tertiary)"] {
-          padding: 8px !important;
-          margin-bottom: 8px !important;
+          padding: 16px !important;
+          margin-bottom: 12px !important;
         }
 
         .contact-item {
-          padding: 8px 10px;
-          font-size: 0.8rem;
+          padding: 14px 18px;
+          font-size: 0.9rem;
+          margin: 0 auto;
+          max-width: 350px;
+          width: 100%;
+          text-align: left;
+          justify-content: flex-start;
         }
 
         .contact-grid {
-          gap: 4px;
-          margin-bottom: 20px;
+          gap: 12px;
+          margin-bottom: 32px;
+          max-width: 100%;
         }
 
         .btn {
@@ -994,9 +1073,15 @@
           padding: 20px 0 10px !important;
         }
 
+        footer .container > div {
+          grid-template-columns: 1fr !important;
+          text-align: center !important;
+        }
+
         footer .container > div > div {
           justify-content: center !important;
-          align-items: center;
+          align-items: center !important;
+          text-align: center !important;
         }
 
         footer h3,
@@ -1013,6 +1098,44 @@
         .publication-item h3 {
           font-size: 1rem !important;
           line-height: 1.2 !important;
+        }
+
+        /* Fix publications layout overflow */
+        #publications > div[style*="display: grid"] > div {
+          margin: 0 auto !important;
+          max-width: 100% !important;
+          overflow: hidden !important;
+        }
+
+        #publications > div[style*="display: grid"] > div > div[style*="display: flex"] {
+          flex-direction: column !important;
+          align-items: center !important;
+          text-align: center !important;
+          gap: 12px !important;
+        }
+
+        #publications > div[style*="display: grid"] > div > div[style*="display: flex"] > div[style*="flex: 1"] {
+          flex: none !important;
+          width: 100% !important;
+          text-align: center !important;
+        }
+
+        /* Fix education cards title/date layout for small screens */
+        #education > div[style*="display: grid"] > div > div[style*="display: flex"][style*="justify-content: space-between"] {
+          flex-direction: column !important;
+          align-items: center !important;
+          text-align: center !important;
+          gap: 8px !important;
+          justify-content: center !important;
+        }
+
+        #education > div[style*="display: grid"] > div > div[style*="display: flex"][style*="justify-content: space-between"] > div {
+          text-align: center !important;
+        }
+
+        /* Fix location text centering for small screens */
+        #education div[style*="display: flex"][style*="align-items: center"][style*="gap: 6px"] {
+          justify-content: center !important;
         }
       }
 
@@ -1469,13 +1592,13 @@
             <div style="background: var(--bg-tertiary); padding: 16px; border-radius: 8px; border-left: 4px solid var(--accent-orange); margin-bottom: 16px;">
               <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
                 <h4 style="color: var(--accent-orange); margin: 0; font-size: 0.95rem; font-weight: 600;">
-                  <i class="fas fa-shield-alt"></i> Specialization: Network Cybersecurity
+                  <i class="fas fa-shield-alt"></i> Specialization: Internet Engineering and Cybersecurity
                 </h4>
                 <div style="background: var(--accent-orange); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">
                   Grade: 17/20
                 </div>
               </div>
-              <p style="color: var(--text-secondary); margin: 0; font-size: 0.9rem;">Information security, access control systems, and identity management</p>
+              <p style="color: var(--text-secondary); margin: 0; font-size: 0.9rem;">Network security, IP internetworking, and cryptographic systems</p>
             </div>
             
             <!-- Key Coursework -->
@@ -1483,20 +1606,24 @@
               <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 0.95rem; font-weight: 600;">
                 <i class="fas fa-book"></i> Key Coursework
               </h4>
-              <ul style="list-style: none; padding-left: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 4px;">
-                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Information Security</li>
-                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Network Infrastructure Design</li>
-                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Systems Administration</li>
-                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Secure Software Development</li>
+              <ul style="list-style: none; padding-left: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 4px;">
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Network Management and Security</li>
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• IP Network Interconnection</li>
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Security Technologies</li>
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Security Engineering</li>
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Cryptographic Structures</li>
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Internet Quality of Service</li>
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Cloud Computing Applications</li>
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Parallel Computing</li>
               </ul>
             </div>
             
-            <!-- Projects -->
+            <!-- Dissertation -->
             <div>
               <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 0.95rem; font-weight: 600;">
-                <i class="fas fa-project-diagram"></i> Notable Project
+                <i class="fas fa-file-alt"></i> Dissertation (19/20)
               </h4>
-              <p style="color: var(--text-secondary); margin: 0; font-size: 0.9rem;">Full-stack development project with Accenture - enterprise application security and user management</p>
+              <p style="color: var(--text-secondary); margin: 0; font-size: 0.9rem;">Seamless Integration of ABC Unified Communications with Microsoft Teams - telecommunications integration research</p>
             </div>
           </div>
 
@@ -1524,22 +1651,26 @@
                   <i class="fas fa-laptop-code"></i> Foundation Studies
                 </h4>
                 <div style="background: var(--accent-orange); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">
-                  Grade: 15/20
+                  Grade: 15.4/20
                 </div>
               </div>
-              <p style="color: var(--text-secondary); margin: 0; font-size: 0.9rem;">Computer systems, network protocols, and cybersecurity fundamentals</p>
+              <p style="color: var(--text-secondary); margin: 0; font-size: 0.9rem;">Comprehensive computer engineering foundation with strong mathematics and programming background</p>
             </div>
             
-            <!-- Core Areas -->
+            <!-- Key Subjects -->
             <div>
               <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 0.95rem; font-weight: 600;">
-                <i class="fas fa-code"></i> Core Areas
+                <i class="fas fa-code"></i> Key Subjects
               </h4>
-              <ul style="list-style: none; padding-left: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 4px;">
-                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Programming Fundamentals (C/Java)</li>
-                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Data Structures & Algorithms</li>
+              <ul style="list-style: none; padding-left: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 4px;">
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Computer Networks & Communications</li>
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Information Systems Security</li>
                 <li style="color: var(--text-secondary); font-size: 0.9rem;">• Database Systems</li>
-                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Software Engineering</li>
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Distributed Systems</li>
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Software Development & Engineering</li>
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Computer Architecture & Systems</li>
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Artificial Intelligence</li>
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Interface Design & Graphics</li>
                 <li style="color: var(--text-secondary); font-size: 0.9rem;">• Computer Networks</li>
                 <li style="color: var(--text-secondary); font-size: 0.9rem;">• Operating Systems</li>
                 <li style="color: var(--text-secondary); font-size: 0.9rem;">• Computer Architecture</li>
@@ -1577,9 +1708,25 @@
                   <i class="fas fa-users" style="color: var(--text-muted); font-size: 0.9rem;"></i>
                   <span style="color: var(--text-secondary); font-size: 0.95rem;">V. M. De Oliveira, S. R. Lima, J. M. Ribeiro and L. Franzões</span>
                 </div>
-                <div style="display: flex; align-items: center; gap: 8px;">
-                  <i class="fas fa-tag" style="color: var(--text-muted); font-size: 0.9rem;"></i>
-                  <span style="color: var(--text-muted); font-size: 0.9rem;">Telecommunications • Unified Communications • Microsoft Teams</span>
+                <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <i class="fas fa-check-circle" style="color: var(--accent-orange); font-size: 0.9rem;"></i>
+                    <span style="color: var(--accent-orange); font-size: 0.9rem; font-weight: 600;">Published - WorldCIST'25</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <i class="fas fa-tag" style="color: var(--text-muted); font-size: 0.9rem;"></i>
+                    <span style="color: var(--text-muted); font-size: 0.9rem;">Telecommunications • Unified Communications • Microsoft Teams</span>
+                  </div>
+                </div>
+                <div style="margin-top: 12px; padding: 12px; background: var(--bg-tertiary); border-radius: 8px; border-left: 4px solid var(--accent-orange);">
+                  <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                    <i class="fas fa-calendar-alt" style="color: var(--accent-orange); font-size: 0.9rem;"></i>
+                    <span style="color: var(--text-primary); font-size: 0.9rem; font-weight: 600;">13th World Conference on Information Systems and Technologies (WorldCIST'25)</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <i class="fas fa-map-marker-alt" style="color: var(--text-muted); font-size: 0.8rem;"></i>
+                    <span style="color: var(--text-secondary); font-size: 0.9rem;">Florianópolis, Brazil • April 15-17, 2025</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1604,12 +1751,28 @@
                 </div>
                 <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
                   <div style="display: flex; align-items: center; gap: 8px;">
-                    <i class="fas fa-external-link-alt" style="color: var(--text-muted); font-size: 0.9rem;"></i>
-                    <span style="color: var(--text-muted); font-size: 0.9rem;">doi: 10.23919/SpliTech61897.2024.10612601</span>
+                    <i class="fas fa-external-link-alt" style="color: var(--accent-orange); font-size: 0.9rem;"></i>
+                    <a href="https://ieeexplore.ieee.org/document/10612601" target="_blank" style="color: var(--accent-orange); text-decoration: none; font-size: 0.9rem; font-weight: 500;">
+                      IEEE Xplore Digital Library
+                    </a>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <i class="fas fa-bookmark" style="color: var(--text-muted); font-size: 0.9rem;"></i>
+                    <span style="color: var(--text-muted); font-size: 0.9rem;">DOI: 10.23919/SpliTech61897.2024.10612601</span>
                   </div>
                   <div style="display: flex; align-items: center; gap: 8px;">
                     <i class="fas fa-tag" style="color: var(--text-muted); font-size: 0.9rem;"></i>
                     <span style="color: var(--text-muted); font-size: 0.9rem;">Unified Communications • Business Trends • Technology</span>
+                  </div>
+                </div>
+                <div style="margin-top: 12px; padding: 12px; background: var(--bg-tertiary); border-radius: 8px; border-left: 4px solid var(--accent-orange);">
+                  <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                    <i class="fas fa-calendar-alt" style="color: var(--accent-orange); font-size: 0.9rem;"></i>
+                    <span style="color: var(--text-primary); font-size: 0.9rem; font-weight: 600;">2024 9th International Conference on Smart and Sustainable Technologies (SpliTech)</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <i class="fas fa-map-marker-alt" style="color: var(--text-muted); font-size: 0.8rem;"></i>
+                    <span style="color: var(--text-secondary); font-size: 0.9rem;">Bol and Split, Croatia • June 25-28, 2024</span>
                   </div>
                 </div>
               </div>

@@ -13,7 +13,9 @@
       "Bash(start http://localhost:8001)",
       "Bash(pip install:*)",
       "Bash(del create_og_image.py)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "WebFetch(domain:www.worldcist.org)",
+      "WebFetch(domain:2024.splitech.org)"
     ],
     "defaultMode": "acceptEdits"
   }
