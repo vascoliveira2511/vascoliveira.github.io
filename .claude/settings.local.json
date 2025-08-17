@@ -3,7 +3,12 @@
     "allow": [
       "Bash(start index.html)",
       "Bash(copy:*)",
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "Bash(python:*)",
+      "Bash(timeout:*)",
+      "Bash(start http://localhost:8000)",
+      "WebSearch",
+      "WebFetch(domain:github.com)"
     ],
     "defaultMode": "acceptEdits"
   }

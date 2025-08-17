@@ -1094,11 +1094,13 @@
             <h3><i class="fas fa-network-wired"></i> Network & System Administration</h3>
             <ul>
               <li>IT Ticket Management (GLPI)</li>
-              <li>Incident Resolution</li>
               <li>System Monitoring (Zabbix)</li>
-              <li>Network Administration</li>
-              <li>Firewall Configuration</li>
-              <li>VPN & Network Connectivity</li>
+              <li>Firewall Configuration (firewalld, shorewall)</li>
+              <li>VPN & IPsec Configuration</li>
+              <li>DNS Server Management</li>
+              <li>Physical Infrastructure (Servers & Switches)</li>
+              <li>Exchange Server Administration</li>
+              <li>Network Documentation & Diagrams</li>
             </ul>
           </div>
 
@@ -1107,9 +1109,12 @@
             <ul>
               <li>Infrastructure Automation (Ansible/AWX)</li>
               <li>Virtualization (oVirt)</li>
-              <li>System Deployment</li>
-              <li>Database Administration</li>
-              <li>Backup & Recovery Solutions</li>
+              <li>Containerization (Docker)</li>
+              <li>Distributed Databases (MySQL Galera, PostgreSQL Patroni)</li>
+              <li>Backup Solutions (BareOS, Veeam, Simplebackup)</li>
+              <li>High Availability & Disaster Recovery</li>
+              <li>Certificate Management (EJBCA)</li>
+              <li>Load Balancing (HAProxy, Nginx, Apache)</li>
             </ul>
           </div>
 
@@ -1120,6 +1125,8 @@
               <li>Java</li>
               <li>SQL</li>
               <li>HTML/CSS/Javascript</li>
+              <li>Bash Scripting</li>
+              <li>Automation Development</li>
             </ul>
           </div>
         </div>
@@ -1133,33 +1140,18 @@
         <div class="projects-grid">
           <div class="project-card">
             <div class="project-title">
-              Network Access Management Mobile App
+              SSH-CA Group Access Management App
             </div>
             <div class="project-tech">
               <span class="tech-tag">Mobile Development</span>
               <span class="tech-tag">FreeIPA</span>
-              <span class="tech-tag">Authentication</span>
+              <span class="tech-tag">SSH Certificate Authority</span>
+              <span class="tech-tag">Access Control</span>
             </div>
             <div class="project-description">
-              Built a mobile application for network access management with
-              FreeIPA integration for user authentication, streamlining network
-              access controls across the organization.
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-title">
-              Multi-site Infrastructure Automation
-            </div>
-            <div class="project-tech">
-              <span class="tech-tag">Ansible/AWX</span>
-              <span class="tech-tag">Infrastructure as Code</span>
-              <span class="tech-tag">DevOps</span>
-            </div>
-            <div class="project-description">
-              Deployed and managed infrastructure across multiple datacenters
-              using Ansible/AWX, implementing infrastructure as code practices
-              for consistent server deployments.
+              Developed a mobile application to manage SSH Certificate Authority group access 
+              through FreeIPA, allowing secure and automated management of SSH access permissions 
+              for network infrastructure.
             </div>
           </div>
 
@@ -1169,11 +1161,53 @@
               <span class="tech-tag">Microsoft Teams</span>
               <span class="tech-tag">SIP</span>
               <span class="tech-tag">VoIP</span>
+              <span class="tech-tag">Network Architecture</span>
             </div>
             <div class="project-description">
               Designed network architecture for ABC Unified Communications
               integration with Microsoft Teams, configuring SIP protocols and
-              Session Border Controllers.
+              Session Border Controllers during internship at Altice Labs.
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-title">Vinyl Collection App</div>
+            <div class="project-tech">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Discogs API</span>
+              <span class="tech-tag">Chart.js</span>
+            </div>
+            <div class="project-description">
+              A retro-themed web application for managing vinyl record collections with user authentication, 
+              Discogs API integration, collection statistics, and data visualization. Features secure JWT 
+              authentication and interactive filtering capabilities.
+            </div>
+            <div style="margin-top: 16px; display: flex; gap: 12px; flex-wrap: wrap;">
+              <a href="https://vinyl-collection-app-ruby.vercel.app" target="_blank" class="btn btn-primary" style="font-size: 0.85rem; padding: 8px 16px;">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a href="https://github.com/vascoliveira2511/VinylCollectionApp" target="_blank" class="btn btn-secondary" style="font-size: 0.85rem; padding: 8px 16px;">
+                <i class="fab fa-github"></i>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-title">Personal Portfolio Website</div>
+            <div class="project-tech">
+              <span class="tech-tag">HTML/CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Responsive Design</span>
+              <span class="tech-tag">UI/UX</span>
+            </div>
+            <div class="project-description">
+              Created this responsive portfolio website with dark/light theme support, 
+              interactive contact forms with multiple submission options, and mobile-optimized 
+              design to showcase professional experience and skills.
             </div>
           </div>
         </div>
@@ -1195,13 +1229,19 @@
           </div>
           <ul style="list-style: none; padding-left: 0;">
             <li style="padding: 6px 0; position: relative; padding-left: 20px;">Handle IT tickets using GLPI for incident management and user support requests across the organization.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Manage Active Directory domains, user accounts, and Group Policies. Create and modify user permissions and group memberships.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Plan and execute infrastructure changes including server deployments, network modifications, and system updates.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Configure firewall policies, IPsec VPN connections, and network segmentation. Manage load balancing with HAProxy.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Manage Active Directory domains, user accounts, Group Policies, DNS, DHCP, and certificates. Create and modify user permissions and group memberships.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Manage datacenters and virtual machines, handling multiple hosts with CentOS, Rocky Linux, and Windows Server across virtualization infrastructures using oVirt.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Configure firewall policies (firewalld, shorewall), IPsec VPN connections, and network segmentation. Set up proxies with HAProxy, Nginx, and Apache for load balancing.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Manage backups with BareOS, Veeam, and Simplebackup ensuring data recovery and business continuity.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Deploy and manage containerized solutions with Docker in both standard and rootless modes for secure deployments.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Install and manage MySQL (Galera) and PostgreSQL (Patroni) distributed databases with high availability configurations.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Implement high availability between datacenters ensuring service continuity and disaster recovery capabilities.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Create and maintain root CA and sub-CA using EJBCA for certificate management and PKI infrastructure.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Automate infrastructure tasks using Ansible/AWX (Ansible Tower) and develop Bash scripts for operational efficiency.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Install physical servers and switches, configure DNS servers and zones, manage network connectivity across sites.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Create network and flow diagrams for documentation and technical procedures for multi-site infrastructure.</li>
             <li style="padding: 6px 0; position: relative; padding-left: 20px;">Built mobile app for network access management with FreeIPA integration for user authentication.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Deploy infrastructure using Ansible/AWX. Monitor systems with Zabbix. Manage MySQL and PostgreSQL clusters.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Document network configurations and create technical procedures for multi-site infrastructure.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Administer Windows and Linux servers across multiple datacenters with virtualized environments.</li>
+            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Monitor systems with Zabbix and manage Exchange Server email infrastructure.</li>
           </ul>
         </div>
 
@@ -1582,36 +1622,219 @@
       function handleContactForm(event) {
         event.preventDefault();
         
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const subject = document.getElementById('subject').value;
-        const message = document.getElementById('message').value;
+        // Get form elements
+        const form = event.target;
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const subject = document.getElementById('subject').value.trim();
+        const message = document.getElementById('message').value.trim();
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalText = submitButton.innerHTML;
         
-        // Create mailto link
-        const mailtoLink = `mailto:vasco-mota-oliveira@outlook.pt?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\nMessage:\n${message}`)}`;
+        // Validate form
+        if (!validateForm(name, email, subject, message)) {
+          return;
+        }
         
         // Show loading state
-        const submitButton = event.target.querySelector('button[type="submit"]');
-        const originalText = submitButton.innerHTML;
-        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Opening Email...';
+        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
         submitButton.disabled = true;
         
-        // Open email client
-        window.location.href = mailtoLink;
+        // Show submission options modal
+        showSubmissionModal(name, email, subject, message, submitButton, originalText, form);
+      }
+      
+      // Form validation
+      function validateForm(name, email, subject, message) {
+        clearErrors();
+        let isValid = true;
         
-        // Reset button after delay
-        setTimeout(() => {
-          submitButton.innerHTML = '<i class="fas fa-check"></i> Email Client Opened';
+        if (!name) {
+          showFieldError('name', 'Name is required');
+          isValid = false;
+        }
+        
+        if (!email) {
+          showFieldError('email', 'Email is required');
+          isValid = false;
+        } else if (!isValidEmail(email)) {
+          showFieldError('email', 'Please enter a valid email address');
+          isValid = false;
+        }
+        
+        if (!subject) {
+          showFieldError('subject', 'Subject is required');
+          isValid = false;
+        }
+        
+        if (!message) {
+          showFieldError('message', 'Message is required');
+          isValid = false;
+        }
+        
+        return isValid;
+      }
+      
+      // Email validation
+      function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+      
+      // Show field error
+      function showFieldError(fieldId, message) {
+        const field = document.getElementById(fieldId);
+        field.style.borderColor = '#e74c3c';
+        
+        // Remove existing error message
+        const existingError = field.parentNode.querySelector('.error-message');
+        if (existingError) {
+          existingError.remove();
+        }
+        
+        // Add error message
+        const errorDiv = document.createElement('div');
+        errorDiv.className = 'error-message';
+        errorDiv.style.color = '#e74c3c';
+        errorDiv.style.fontSize = '0.85rem';
+        errorDiv.style.marginTop = '4px';
+        errorDiv.textContent = message;
+        field.parentNode.appendChild(errorDiv);
+      }
+      
+      // Clear all errors
+      function clearErrors() {
+        const fields = ['name', 'email', 'subject', 'message'];
+        fields.forEach(fieldId => {
+          const field = document.getElementById(fieldId);
+          field.style.borderColor = 'var(--border-color)';
+          const errorMessage = field.parentNode.querySelector('.error-message');
+          if (errorMessage) {
+            errorMessage.remove();
+          }
+        });
+      }
+      
+      // Show submission modal
+      function showSubmissionModal(name, email, subject, message, submitButton, originalText, form) {
+        const modal = document.createElement('div');
+        modal.style.cssText = `
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 10000;
+          backdrop-filter: blur(5px);
+        `;
+        
+        const modalContent = document.createElement('div');
+        modalContent.style.cssText = `
+          background: var(--bg-secondary);
+          padding: 32px;
+          border-radius: 12px;
+          max-width: 500px;
+          width: 90%;
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+          border: 1px solid var(--border-color);
+        `;
+        
+        modalContent.innerHTML = `
+          <h3 style="margin-bottom: 16px; color: var(--text-primary); text-align: center;">Send Your Message</h3>
+          <p style="margin-bottom: 24px; color: var(--text-secondary); text-align: center; line-height: 1.5;">
+            Choose how you'd like to send your message to Vasco:
+          </p>
+          
+          <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;">
+            <button id="emailClient" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              <i class="fas fa-envelope"></i>
+              Open Email Client
+            </button>
+            <button id="copyMessage" class="btn btn-secondary" style="width: 100%; justify-content: center;">
+              <i class="fas fa-copy"></i>
+              Copy Message & Email
+            </button>
+            <button id="whatsapp" class="btn btn-secondary" style="width: 100%; justify-content: center; background: #25d366; color: white; border-color: #25d366;">
+              <i class="fab fa-whatsapp"></i>
+              WhatsApp (+351 916991640)
+            </button>
+          </div>
+          
+          <div style="display: flex; gap: 12px;">
+            <button id="cancelSubmission" class="btn btn-secondary" style="flex: 1; justify-content: center;">
+              Cancel
+            </button>
+          </div>
+        `;
+        
+        modal.appendChild(modalContent);
+        document.body.appendChild(modal);
+        
+        // Email client option
+        document.getElementById('emailClient').onclick = () => {
+          const mailtoLink = `mailto:vasco-mota-oliveira@outlook.pt?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\nMessage:\n${message}`)}`;
+          window.location.href = mailtoLink;
+          closeModalAndReset(modal, submitButton, originalText, form, 'Email client opened successfully!');
+        };
+        
+        // Copy message option
+        document.getElementById('copyMessage').onclick = () => {
+          const messageText = `Email: vasco-mota-oliveira@outlook.pt\n\nSubject: ${subject}\n\nFrom: ${name} (${email})\n\nMessage:\n${message}`;
+          navigator.clipboard.writeText(messageText).then(() => {
+            closeModalAndReset(modal, submitButton, originalText, form, 'Message and email copied to clipboard!');
+          }).catch(() => {
+            closeModalAndReset(modal, submitButton, originalText, form, 'Please copy manually - Email: vasco-mota-oliveira@outlook.pt');
+          });
+        };
+        
+        // WhatsApp option
+        document.getElementById('whatsapp').onclick = () => {
+          const whatsappText = `Hi! I'm ${name}. ${message}\n\nEmail: ${email}\nSubject: ${subject}`;
+          const whatsappLink = `https://wa.me/351916991640?text=${encodeURIComponent(whatsappText)}`;
+          window.open(whatsappLink, '_blank');
+          closeModalAndReset(modal, submitButton, originalText, form, 'WhatsApp opened successfully!');
+        };
+        
+        // Cancel option
+        document.getElementById('cancelSubmission').onclick = () => {
+          closeModalAndReset(modal, submitButton, originalText, null);
+        };
+        
+        // Close on background click
+        modal.onclick = (e) => {
+          if (e.target === modal) {
+            closeModalAndReset(modal, submitButton, originalText, null);
+          }
+        };
+      }
+      
+      // Close modal and reset form
+      function closeModalAndReset(modal, submitButton, originalText, form, successMessage) {
+        document.body.removeChild(modal);
+        
+        if (successMessage) {
+          // Show success message
+          submitButton.innerHTML = '<i class="fas fa-check"></i> ' + successMessage;
           submitButton.style.background = '#28a745';
           
           setTimeout(() => {
             submitButton.innerHTML = originalText;
             submitButton.style.background = '';
             submitButton.disabled = false;
-            // Reset form
-            event.target.reset();
-          }, 2000);
-        }, 1000);
+            if (form) {
+              form.reset();
+              clearErrors();
+            }
+          }, 3000);
+        } else {
+          // Just reset button
+          submitButton.innerHTML = originalText;
+          submitButton.disabled = false;
+        }
       }
 
       // Back to top functionality
