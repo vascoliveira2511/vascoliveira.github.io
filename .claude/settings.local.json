@@ -8,7 +8,8 @@
       "Bash(timeout:*)",
       "Bash(start http://localhost:8000)",
       "WebSearch",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:game-hub-kappa-eight-30.vercel.app)"
     ],
     "defaultMode": "acceptEdits"
   }

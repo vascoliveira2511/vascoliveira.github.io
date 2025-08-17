@@ -1197,6 +1197,31 @@
           </div>
 
           <div class="project-card">
+            <div class="project-title">Game Hub</div>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Chakra UI</span>
+              <span class="tech-tag">API Integration</span>
+            </div>
+            <div class="project-description">
+              A minimalist, responsive web application for discovering and exploring video games. 
+              Features platform filtering, critic scores, search functionality, and dark mode toggle. 
+              Built as a learning exercise in modern React development and UI design.
+            </div>
+            <div style="margin-top: 16px; display: flex; gap: 12px; flex-wrap: wrap;">
+              <a href="https://game-hub-kappa-eight-30.vercel.app/" target="_blank" class="btn btn-primary" style="font-size: 0.85rem; padding: 8px 16px;">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a href="https://github.com/vascoliveira2511/game-hub" target="_blank" class="btn btn-secondary" style="font-size: 0.85rem; padding: 8px 16px;">
+                <i class="fab fa-github"></i>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
             <div class="project-title">Personal Portfolio Website</div>
             <div class="project-tech">
               <span class="tech-tag">HTML/CSS</span>
@@ -1227,22 +1252,67 @@
             </div>
             <div class="duration">2024/09 - Present</div>
           </div>
-          <ul style="list-style: none; padding-left: 0;">
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Handle IT tickets using GLPI for incident management and user support requests across the organization.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Manage Active Directory domains, user accounts, Group Policies, DNS, DHCP, and certificates. Create and modify user permissions and group memberships.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Manage datacenters and virtual machines, handling multiple hosts with CentOS, Rocky Linux, and Windows Server across virtualization infrastructures using oVirt.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Configure firewall policies (firewalld, shorewall), IPsec VPN connections, and network segmentation. Set up proxies with HAProxy, Nginx, and Apache for load balancing.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Manage backups with BareOS, Veeam, and Simplebackup ensuring data recovery and business continuity.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Deploy and manage containerized solutions with Docker in both standard and rootless modes for secure deployments.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Install and manage MySQL (Galera) and PostgreSQL (Patroni) distributed databases with high availability configurations.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Implement high availability between datacenters ensuring service continuity and disaster recovery capabilities.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Create and maintain root CA and sub-CA using EJBCA for certificate management and PKI infrastructure.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Automate infrastructure tasks using Ansible/AWX (Ansible Tower) and develop Bash scripts for operational efficiency.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Install physical servers and switches, configure DNS servers and zones, manage network connectivity across sites.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Create network and flow diagrams for documentation and technical procedures for multi-site infrastructure.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Built mobile app for network access management with FreeIPA integration for user authentication.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Monitor systems with Zabbix and manage Exchange Server email infrastructure.</li>
-          </ul>
+          <div style="display: grid; gap: 20px;">
+            <!-- IT Support & Administration -->
+            <div style="background: var(--bg-secondary); padding: 20px; border-radius: 8px; border-left: 4px solid var(--accent-orange);">
+              <h4 style="color: var(--accent-orange); margin-bottom: 12px; font-size: 1rem; font-weight: 600;">
+                <i class="fas fa-headset"></i> IT Support & Administration
+              </h4>
+              <ul style="list-style: none; padding-left: 0; margin: 0;">
+                <li style="padding: 4px 0; position: relative; padding-left: 16px; color: var(--text-secondary);">• Handle IT tickets using GLPI for incident management and user support</li>
+                <li style="padding: 4px 0; position: relative; padding-left: 16px; color: var(--text-secondary);">• Manage Active Directory domains, user accounts, Group Policies, DNS, DHCP, and certificates</li>
+                <li style="padding: 4px 0; position: relative; padding-left: 16px; color: var(--text-secondary);">• Monitor systems with Zabbix and manage Exchange Server email infrastructure</li>
+              </ul>
+            </div>
+
+            <!-- Infrastructure & Virtualization -->
+            <div style="background: var(--bg-secondary); padding: 20px; border-radius: 8px; border-left: 4px solid var(--accent-orange);">
+              <h4 style="color: var(--accent-orange); margin-bottom: 12px; font-size: 1rem; font-weight: 600;">
+                <i class="fas fa-server"></i> Infrastructure & Virtualization
+              </h4>
+              <ul style="list-style: none; padding-left: 0; margin: 0;">
+                <li style="padding: 4px 0; position: relative; padding-left: 16px; color: var(--text-secondary);">• Manage datacenters and VMs with CentOS, Rocky Linux, Windows Server using oVirt</li>
+                <li style="padding: 4px 0; position: relative; padding-left: 16px; color: var(--text-secondary);">• Install physical servers and switches, manage network connectivity across sites</li>
+                <li style="padding: 4px 0; position: relative; padding-left: 16px; color: var(--text-secondary);">• Implement high availability between datacenters for service continuity</li>
+              </ul>
+            </div>
+
+            <!-- Network & Security -->
+            <div style="background: var(--bg-secondary); padding: 20px; border-radius: 8px; border-left: 4px solid var(--accent-orange);">
+              <h4 style="color: var(--accent-orange); margin-bottom: 12px; font-size: 1rem; font-weight: 600;">
+                <i class="fas fa-shield-alt"></i> Network & Security
+              </h4>
+              <ul style="list-style: none; padding-left: 0; margin: 0;">
+                <li style="padding: 4px 0; position: relative; padding-left: 16px; color: var(--text-secondary);">• Configure firewall policies (firewalld, shorewall), IPsec VPN connections</li>
+                <li style="padding: 4px 0; position: relative; padding-left: 16px; color: var(--text-secondary);">• Set up proxies with HAProxy, Nginx, Apache for load balancing</li>
+                <li style="padding: 4px 0; position: relative; padding-left: 16px; color: var(--text-secondary);">• Create and maintain root CA and sub-CA using EJBCA for PKI infrastructure</li>
+              </ul>
+            </div>
+
+            <!-- Database & Backup Management -->
+            <div style="background: var(--bg-secondary); padding: 20px; border-radius: 8px; border-left: 4px solid var(--accent-orange);">
+              <h4 style="color: var(--accent-orange); margin-bottom: 12px; font-size: 1rem; font-weight: 600;">
+                <i class="fas fa-database"></i> Database & Backup Management
+              </h4>
+              <ul style="list-style: none; padding-left: 0; margin: 0;">
+                <li style="padding: 4px 0; position: relative; padding-left: 16px; color: var(--text-secondary);">• Install and manage MySQL (Galera) and PostgreSQL (Patroni) distributed databases</li>
+                <li style="padding: 4px 0; position: relative; padding-left: 16px; color: var(--text-secondary);">• Manage backups with BareOS, Veeam, and Simplebackup for data recovery</li>
+                <li style="padding: 4px 0; position: relative; padding-left: 16px; color: var(--text-secondary);">• Deploy containerized solutions with Docker (standard and rootless modes)</li>
+              </ul>
+            </div>
+
+            <!-- Automation & Development -->
+            <div style="background: var(--bg-secondary); padding: 20px; border-radius: 8px; border-left: 4px solid var(--accent-orange);">
+              <h4 style="color: var(--accent-orange); margin-bottom: 12px; font-size: 1rem; font-weight: 600;">
+                <i class="fas fa-code"></i> Automation & Development
+              </h4>
+              <ul style="list-style: none; padding-left: 0; margin: 0;">
+                <li style="padding: 4px 0; position: relative; padding-left: 16px; color: var(--text-secondary);">• Automate infrastructure tasks using Ansible/AWX and develop Bash scripts</li>
+                <li style="padding: 4px 0; position: relative; padding-left: 16px; color: var(--text-secondary);">• Built mobile app for network access management with FreeIPA integration</li>
+                <li style="padding: 4px 0; position: relative; padding-left: 16px; color: var(--text-secondary);">• Create network and flow diagrams for documentation and technical procedures</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div class="experience-item">
@@ -1250,15 +1320,37 @@
             <div>
               <h3 class="job-title" style="font-size: 1.3rem; font-weight: 600; margin-bottom: 8px;">Curricular Internship - Telecommunications Integration</h3>
               <div class="company" style="font-size: 1.1rem; font-weight: 500; margin-bottom: 4px;">Altice Labs</div>
-              <div class="location" style="font-size: 0.9rem;">Porto, Portugal</div>
+              <div style="display: flex; align-items: center; gap: 6px; font-size: 0.9rem; color: var(--text-muted);">
+                <i class="fas fa-map-marker-alt" style="font-size: 0.8rem;"></i>
+                <span>Porto, Portugal</span>
+              </div>
             </div>
             <div class="duration">2023/08 - 2024/07</div>
           </div>
-          <ul style="list-style: none; padding-left: 0;">
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Designed network architecture for ABC Unified Communications integration with Microsoft Teams.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Configured SIP protocols and Session Border Controllers for VoIP communications.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Worked on telecommunications infrastructure and cloud integration projects.</li>
-          </ul>
+          
+          <div style="display: grid; gap: 20px;">
+            <!-- Network Architecture & Design -->
+            <div style="background: var(--bg-secondary); padding: 20px; border-radius: 8px; border-left: 4px solid var(--accent-orange);">
+              <h4 style="color: var(--accent-orange); margin-bottom: 12px; font-size: 1rem; font-weight: 600;">
+                <i class="fas fa-network-wired"></i> Network Architecture & Design
+              </h4>
+              <ul style="list-style: none; padding-left: 0; margin: 0;">
+                <li style="padding: 4px 0; position: relative; padding-left: 16px; color: var(--text-secondary);">• Designed network architecture for ABC Unified Communications integration with Microsoft Teams</li>
+                <li style="padding: 4px 0; position: relative; padding-left: 16px; color: var(--text-secondary);">• Configured SIP protocols and Session Border Controllers for VoIP communications</li>
+              </ul>
+            </div>
+
+            <!-- Telecommunications & Cloud Integration -->
+            <div style="background: var(--bg-secondary); padding: 20px; border-radius: 8px; border-left: 4px solid var(--accent-orange);">
+              <h4 style="color: var(--accent-orange); margin-bottom: 12px; font-size: 1rem; font-weight: 600;">
+                <i class="fas fa-cloud"></i> Telecommunications & Cloud Integration
+              </h4>
+              <ul style="list-style: none; padding-left: 0; margin: 0;">
+                <li style="padding: 4px 0; position: relative; padding-left: 16px; color: var(--text-secondary);">• Worked on telecommunications infrastructure and cloud integration projects</li>
+                <li style="padding: 4px 0; position: relative; padding-left: 16px; color: var(--text-secondary);">• Developed expertise in unified communications platforms and enterprise integration</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -1267,35 +1359,102 @@
         <h2>Education</h2>
         <p class="section-subtitle">Academic background in computer engineering and cybersecurity</p>
         
-        <div class="education-item">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
-            <div>
-              <h3 class="degree" style="font-size: 1.3rem; font-weight: 600; margin-bottom: 8px;">Master's in Computer Engineering</h3>
-              <div class="university" style="font-size: 1.1rem; font-weight: 500; margin-bottom: 4px;">University of Minho</div>
-              <div class="location" style="font-size: 0.9rem;">Braga, Portugal</div>
+        <div style="display: grid; gap: 24px;">
+          <!-- Master's Degree -->
+          <div style="background: var(--bg-secondary); padding: 24px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 20px;">
+              <div style="flex: 1;">
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+                  <i class="fas fa-graduation-cap" style="color: var(--accent-orange); font-size: 1.2rem;"></i>
+                  <h3 style="font-size: 1.3rem; font-weight: 600; color: var(--text-primary); margin: 0;">Master's in Computer Engineering</h3>
+                </div>
+                <div style="font-size: 1.1rem; font-weight: 500; color: var(--text-primary); margin-bottom: 4px;">University of Minho</div>
+                <div style="display: flex; align-items: center; gap: 6px; font-size: 0.9rem; color: var(--text-muted);">
+                  <i class="fas fa-map-marker-alt" style="font-size: 0.8rem;"></i>
+                  <span>Braga, Portugal</span>
+                </div>
+              </div>
+              <div class="duration">09/2022 - 09/2024</div>
             </div>
-            <div class="duration">09/2022 - 09/2024</div>
+            
+            <!-- Specialization & Grade -->
+            <div style="background: var(--bg-tertiary); padding: 16px; border-radius: 8px; border-left: 4px solid var(--accent-orange); margin-bottom: 16px;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+                <h4 style="color: var(--accent-orange); margin: 0; font-size: 0.95rem; font-weight: 600;">
+                  <i class="fas fa-shield-alt"></i> Specialization: Network Cybersecurity
+                </h4>
+                <div style="background: var(--accent-orange); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">
+                  Grade: 17/20
+                </div>
+              </div>
+              <p style="color: var(--text-secondary); margin: 0; font-size: 0.9rem;">Information security, access control systems, and identity management</p>
+            </div>
+            
+            <!-- Key Coursework -->
+            <div style="margin-bottom: 16px;">
+              <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 0.95rem; font-weight: 600;">
+                <i class="fas fa-book"></i> Key Coursework
+              </h4>
+              <ul style="list-style: none; padding-left: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 4px;">
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Information Security</li>
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Network Infrastructure Design</li>
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Systems Administration</li>
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Secure Software Development</li>
+              </ul>
+            </div>
+            
+            <!-- Projects -->
+            <div>
+              <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 0.95rem; font-weight: 600;">
+                <i class="fas fa-project-diagram"></i> Notable Project
+              </h4>
+              <p style="color: var(--text-secondary); margin: 0; font-size: 0.9rem;">Full-stack development project with Accenture - enterprise application security and user management</p>
+            </div>
           </div>
-          <ul style="list-style: none; padding-left: 0;">
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Specialized in Network Cybersecurity with focus on information security, access control systems, and identity management.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Coursework included Information Security, Network Infrastructure Design, Systems Administration, and secure software development practices.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Completed full-stack development project with Accenture, gaining experience in enterprise application security and user management.</li>
-          </ul>
-        </div>
 
-        <div class="education-item">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
-            <div>
-              <h3 class="degree" style="font-size: 1.3rem; font-weight: 600; margin-bottom: 8px;">Bachelor's in Computer Engineering</h3>
-              <div class="university" style="font-size: 1.1rem; font-weight: 500; margin-bottom: 4px;">University of Minho</div>
-              <div class="location" style="font-size: 0.9rem;">Braga, Portugal</div>
+          <!-- Bachelor's Degree -->
+          <div style="background: var(--bg-secondary); padding: 24px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 20px;">
+              <div style="flex: 1;">
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+                  <i class="fas fa-graduation-cap" style="color: var(--accent-orange); font-size: 1.2rem;"></i>
+                  <h3 style="font-size: 1.3rem; font-weight: 600; color: var(--text-primary); margin: 0;">Bachelor's in Computer Engineering</h3>
+                </div>
+                <div style="font-size: 1.1rem; font-weight: 500; color: var(--text-primary); margin-bottom: 4px;">University of Minho</div>
+                <div style="display: flex; align-items: center; gap: 6px; font-size: 0.9rem; color: var(--text-muted);">
+                  <i class="fas fa-map-marker-alt" style="font-size: 0.8rem;"></i>
+                  <span>Braga, Portugal</span>
+                </div>
+              </div>
+              <div class="duration">09/2019 - 07/2022</div>
             </div>
-            <div class="duration">09/2019 - 07/2022</div>
+            
+            <!-- Foundation & Grade -->
+            <div style="background: var(--bg-tertiary); padding: 16px; border-radius: 8px; border-left: 4px solid var(--accent-orange); margin-bottom: 16px;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+                <h4 style="color: var(--accent-orange); margin: 0; font-size: 0.95rem; font-weight: 600;">
+                  <i class="fas fa-laptop-code"></i> Foundation Studies
+                </h4>
+                <div style="background: var(--accent-orange); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">
+                  Grade: 15/20
+                </div>
+              </div>
+              <p style="color: var(--text-secondary); margin: 0; font-size: 0.9rem;">Computer systems, network protocols, and cybersecurity fundamentals</p>
+            </div>
+            
+            <!-- Core Areas -->
+            <div>
+              <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 0.95rem; font-weight: 600;">
+                <i class="fas fa-code"></i> Core Areas
+              </h4>
+              <ul style="list-style: none; padding-left: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 4px;">
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Database Systems</li>
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Software Engineering</li>
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Computer Networks</li>
+                <li style="color: var(--text-secondary); font-size: 0.9rem;">• Programming Fundamentals</li>
+              </ul>
+            </div>
           </div>
-          <ul style="list-style: none; padding-left: 0;">
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Foundation in computer systems, network protocols, and cybersecurity fundamentals.</li>
-            <li style="padding: 6px 0; position: relative; padding-left: 20px;">Coursework in database systems, software engineering, and computer networks.</li>
-          </ul>
         </div>
       </div>
 
@@ -1304,16 +1463,62 @@
         <h2>Publications</h2>
         <p class="section-subtitle">Research contributions in unified communications and telecommunications</p>
         
-        <div class="publication-item">
-          <h3 class="publication-title" style="font-size: 1.3rem; font-weight: 600; margin-bottom: 8px; color: var(--text-primary);">Seamless Integration of ABC Unified Communications with Microsoft Teams</h3>
-          <div style="color: var(--text-secondary); margin-bottom: 8px;">V. M. De Oliveira, S. R. Lima, J. M. Ribeiro and L. Franzões</div>
-          <div class="publication-year" style="font-size: 0.9rem;">2025</div>
-        </div>
+        <div style="display: grid; gap: 24px;">
+          <!-- Publication 1 -->
+          <div style="background: var(--bg-secondary); padding: 24px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow);">
+            <div style="display: flex; align-items: flex-start; gap: 16px; margin-bottom: 16px;">
+              <div style="background: var(--accent-orange); color: white; padding: 8px 12px; border-radius: 6px; font-weight: 600; font-size: 0.9rem; white-space: nowrap;">
+                2025
+              </div>
+              <div style="flex: 1;">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                  <i class="fas fa-file-alt" style="color: var(--accent-orange); font-size: 1.1rem;"></i>
+                  <h3 style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin: 0; line-height: 1.3;">
+                    Seamless Integration of ABC Unified Communications with Microsoft Teams
+                  </h3>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                  <i class="fas fa-users" style="color: var(--text-muted); font-size: 0.9rem;"></i>
+                  <span style="color: var(--text-secondary); font-size: 0.95rem;">V. M. De Oliveira, S. R. Lima, J. M. Ribeiro and L. Franzões</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <i class="fas fa-tag" style="color: var(--text-muted); font-size: 0.9rem;"></i>
+                  <span style="color: var(--text-muted); font-size: 0.9rem;">Telecommunications • Unified Communications • Microsoft Teams</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <div class="publication-item">
-          <h3 class="publication-title" style="font-size: 1.3rem; font-weight: 600; margin-bottom: 8px; color: var(--text-primary);">Embracing Unified Communication and Collaboration: Business and Technological Trends</h3>
-          <div style="color: var(--text-secondary); margin-bottom: 8px;">V. M. De Oliveira, S. R. Lima and J. M. Ribeiro</div>
-          <div class="publication-year" style="font-size: 0.9rem;">2024 | doi: 10.23919/SpliTech61897.2024.10612601</div>
+          <!-- Publication 2 -->
+          <div style="background: var(--bg-secondary); padding: 24px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow);">
+            <div style="display: flex; align-items: flex-start; gap: 16px; margin-bottom: 16px;">
+              <div style="background: var(--accent-orange); color: white; padding: 8px 12px; border-radius: 6px; font-weight: 600; font-size: 0.9rem; white-space: nowrap;">
+                2024
+              </div>
+              <div style="flex: 1;">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                  <i class="fas fa-file-alt" style="color: var(--accent-orange); font-size: 1.1rem;"></i>
+                  <h3 style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin: 0; line-height: 1.3;">
+                    Embracing Unified Communication and Collaboration: Business and Technological Trends
+                  </h3>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                  <i class="fas fa-users" style="color: var(--text-muted); font-size: 0.9rem;"></i>
+                  <span style="color: var(--text-secondary); font-size: 0.95rem;">V. M. De Oliveira, S. R. Lima and J. M. Ribeiro</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <i class="fas fa-external-link-alt" style="color: var(--text-muted); font-size: 0.9rem;"></i>
+                    <span style="color: var(--text-muted); font-size: 0.9rem;">doi: 10.23919/SpliTech61897.2024.10612601</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <i class="fas fa-tag" style="color: var(--text-muted); font-size: 0.9rem;"></i>
+                    <span style="color: var(--text-muted); font-size: 0.9rem;">Unified Communications • Business Trends • Technology</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -1322,41 +1527,71 @@
         <h2>Languages</h2>
         <p class="section-subtitle">Multilingual capabilities for international collaboration</p>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 32px;">
-          <div class="language-item">
-            <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">Portuguese</h3>
-            <div style="display: flex; gap: 4px;">
-              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
-              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
-              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
-              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
-              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+          <!-- Portuguese -->
+          <div style="background: var(--bg-secondary); padding: 24px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow); text-align: center;">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 16px;">
+              <div style="font-size: 2rem;">🇵🇹</div>
+              <h3 style="font-size: 1.3rem; font-weight: 600; color: var(--text-primary); margin: 0;">Portuguese</h3>
             </div>
-            <div style="margin-top: 8px; color: var(--text-secondary); font-size: 0.9rem;">Native</div>
+            
+            <div style="background: var(--bg-tertiary); padding: 12px; border-radius: 8px; margin-bottom: 16px;">
+              <div style="color: var(--accent-orange); font-weight: 600; font-size: 1rem; margin-bottom: 4px;">Native Speaker</div>
+              <div style="color: var(--text-secondary); font-size: 0.9rem;">Mother tongue</div>
+            </div>
+            
+            <div style="display: flex; justify-content: center; gap: 6px; margin-bottom: 8px;">
+              <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--accent-orange); border: 2px solid var(--accent-orange);"></div>
+              <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--accent-orange); border: 2px solid var(--accent-orange);"></div>
+              <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--accent-orange); border: 2px solid var(--accent-orange);"></div>
+              <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--accent-orange); border: 2px solid var(--accent-orange);"></div>
+              <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--accent-orange); border: 2px solid var(--accent-orange);"></div>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.85rem;">5/5 - Fluent</div>
           </div>
 
-          <div class="language-item">
-            <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">English</h3>
-            <div style="display: flex; gap: 4px;">
-              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
-              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
-              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
-              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
-              <div class="dot empty" style="width: 12px; height: 12px; border-radius: 50%; background: var(--border-color);"></div>
+          <!-- English -->
+          <div style="background: var(--bg-secondary); padding: 24px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow); text-align: center;">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 16px;">
+              <div style="font-size: 2rem;">🇬🇧</div>
+              <h3 style="font-size: 1.3rem; font-weight: 600; color: var(--text-primary); margin: 0;">English</h3>
             </div>
-            <div style="margin-top: 8px; color: var(--text-secondary); font-size: 0.9rem;">Advanced</div>
+            
+            <div style="background: var(--bg-tertiary); padding: 12px; border-radius: 8px; margin-bottom: 16px;">
+              <div style="color: var(--accent-orange); font-weight: 600; font-size: 1rem; margin-bottom: 4px;">Advanced</div>
+              <div style="color: var(--text-secondary); font-size: 0.9rem;">Professional working proficiency</div>
+            </div>
+            
+            <div style="display: flex; justify-content: center; gap: 6px; margin-bottom: 8px;">
+              <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--accent-orange); border: 2px solid var(--accent-orange);"></div>
+              <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--accent-orange); border: 2px solid var(--accent-orange);"></div>
+              <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--accent-orange); border: 2px solid var(--accent-orange);"></div>
+              <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--accent-orange); border: 2px solid var(--accent-orange);"></div>
+              <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--border-color); border: 2px solid var(--border-color);"></div>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.85rem;">4/5 - Advanced</div>
           </div>
 
-          <div class="language-item">
-            <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">French</h3>
-            <div style="display: flex; gap: 4px;">
-              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
-              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
-              <div class="dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
-              <div class="dot empty" style="width: 12px; height: 12px; border-radius: 50%; background: var(--border-color);"></div>
-              <div class="dot empty" style="width: 12px; height: 12px; border-radius: 50%; background: var(--border-color);"></div>
+          <!-- French -->
+          <div style="background: var(--bg-secondary); padding: 24px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow); text-align: center;">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 16px;">
+              <div style="font-size: 2rem;">🇫🇷</div>
+              <h3 style="font-size: 1.3rem; font-weight: 600; color: var(--text-primary); margin: 0;">French</h3>
             </div>
-            <div style="margin-top: 8px; color: var(--text-secondary); font-size: 0.9rem;">Intermediate</div>
+            
+            <div style="background: var(--bg-tertiary); padding: 12px; border-radius: 8px; margin-bottom: 16px;">
+              <div style="color: var(--accent-orange); font-weight: 600; font-size: 1rem; margin-bottom: 4px;">Intermediate</div>
+              <div style="color: var(--text-secondary); font-size: 0.9rem;">Limited working proficiency</div>
+            </div>
+            
+            <div style="display: flex; justify-content: center; gap: 6px; margin-bottom: 8px;">
+              <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--accent-orange); border: 2px solid var(--accent-orange);"></div>
+              <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--accent-orange); border: 2px solid var(--accent-orange);"></div>
+              <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--accent-orange); border: 2px solid var(--accent-orange);"></div>
+              <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--border-color); border: 2px solid var(--border-color);"></div>
+              <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--border-color); border: 2px solid var(--border-color);"></div>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.85rem;">3/5 - Intermediate</div>
           </div>
         </div>
       </div>
@@ -1454,11 +1689,23 @@
           
           <div>
             <h4 style="color: var(--text-primary); margin-bottom: 16px; font-size: 1.1rem;">Contact Info</h4>
-            <div style="display: flex; flex-direction: column; gap: 8px; color: var(--text-secondary);">
-              <div>📍 Guimarães, Portugal</div>
-              <div>📧 vasco-mota-oliveira@outlook.pt</div>
-              <div>📱 +351 916991640</div>
-              <div>🆔 ORCID: 0009-0007-2534-5653</div>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; align-items: center; gap: 8px; color: var(--text-secondary);">
+                <i class="fas fa-map-marker-alt" style="width: 16px; color: var(--text-muted);"></i>
+                <span>Guimarães, Portugal</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px; color: var(--text-secondary);">
+                <i class="fas fa-envelope" style="width: 16px; color: var(--text-muted);"></i>
+                <span>vasco-mota-oliveira@outlook.pt</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px; color: var(--text-secondary);">
+                <i class="fas fa-phone" style="width: 16px; color: var(--text-muted);"></i>
+                <span>+351 916991640</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px; color: var(--text-secondary);">
+                <i class="fas fa-id-card" style="width: 16px; color: var(--text-muted);"></i>
+                <span>ORCID: 0009-0007-2534-5653</span>
+              </div>
             </div>
           </div>
         </div>
