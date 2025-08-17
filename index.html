@@ -2119,14 +2119,14 @@
         
         // Email client option
         document.getElementById('emailClient').onclick = () => {
-          const mailtoLink = `mailto:vasco-mota-oliveira@outlook.pt?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\nMessage:\n${message}`)}`;
+          const mailtoLink = `mailto:vasco-mota-oliveira@outlook.pt?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`${message}\n\n---\nSent by: ${name}\nEmail: ${email}`)}`;
           window.location.href = mailtoLink;
           closeModalAndReset(modal, submitButton, originalText, form, 'Email client opened successfully!');
         };
         
         // Copy message option
         document.getElementById('copyMessage').onclick = () => {
-          const messageText = `Email: vasco-mota-oliveira@outlook.pt\n\nSubject: ${subject}\n\nFrom: ${name} (${email})\n\nMessage:\n${message}`;
+          const messageText = `To: vasco-mota-oliveira@outlook.pt\nSubject: ${subject}\n\n${message}\n\n---\nSent by: ${name}\nEmail: ${email}`;
           navigator.clipboard.writeText(messageText).then(() => {
             closeModalAndReset(modal, submitButton, originalText, form, 'Message and email copied to clipboard!');
           }).catch(() => {
