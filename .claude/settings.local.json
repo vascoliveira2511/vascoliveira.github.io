@@ -15,7 +15,9 @@
       "Bash(del create_og_image.py)",
       "Bash(rm:*)",
       "WebFetch(domain:www.worldcist.org)",
-      "WebFetch(domain:2024.splitech.org)"
+      "WebFetch(domain:2024.splitech.org)",
+      "Bash(dir:*)",
+      "Bash(del create_pdf.py)"
     ],
     "defaultMode": "acceptEdits"
   }
